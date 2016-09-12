@@ -19,8 +19,9 @@ var PORT = 80;
 
 var app = express();
 app.get('/', function (req, res) {
+  console.log('Responding to request');
   res.send('Welcome to a fine app for trying out pipeline services. Or maybe just a stupid hello world.');
 });
 
 app.listen(PORT)
-console.log(' Application Running on port' + PORT);
+console.log('Application Running on port ' + PORT);
